@@ -1,12 +1,10 @@
-import {
+import constObject, {
     addFieldToObject,
-    constObject,
     createAddFunction,
     createArray,
     createSumFunction, elementsSum, getNames,
     getType, justPositive,
-    maxElement
-} from './types';
+    maxElement} from './types';
 
 describe('getType', () => {
     it('getType: number', () => {
@@ -122,8 +120,8 @@ describe('justPositive', () => {
     });
 
     it('test 2', () => {
-        expect(justPositive(["hallo", null, undefined, true, 5, [], {}]))
-            .toEqual([5]);
+        expect(justPositive(["hallo", null, undefined, true, 5, 5.5, [], {}]))
+            .toEqual([5, 5.5]);
     });
 });
 

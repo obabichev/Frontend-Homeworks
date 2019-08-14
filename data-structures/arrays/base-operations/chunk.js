@@ -10,4 +10,13 @@
  */
 export const chunk = (arr, size) => {
     //TODO
-};
+    var temparray = [];
+    if (arr == null) {
+        return [];
+    } else {
+        for (var i = 0; i < arr.length; i += size) {
+            temparray.push(arr.slice(i, i + size));
+        }
+        return temparray;
+    }
+    };
