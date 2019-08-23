@@ -62,6 +62,13 @@ export class LinkedList {
     }
 
     /**
+     * This method should reverse list inside list
+     */
+    reverse() {
+
+    }
+
+    /**
      * This method is used for tests, but you can use it for your testing
      *
      * This method returns list as string like '4 -> 3 -> 2 -> 1 -> 0', Where 4 is the data of the root element
